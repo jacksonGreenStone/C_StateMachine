@@ -13,6 +13,7 @@ A compact C finite state machine (FSM) implementation that's easy to use on embe
 - [Table of Contents](#table-of-contents)
 - [Preface](#preface)
   - [Related repositories](#related-repositories)
+- [Getting Started](#getting-started)
 - [Introduction](#introduction)
   - [Background](#background)
 - [Project Build](#project-build)
@@ -46,15 +47,25 @@ Originally published on CodeProject at: <a href="https://www.codeproject.com/Art
 
 Based on original design published in C\C++ Users Journal (Dr. Dobb's) at: <a href="http://www.drdobbs.com/cpp/state-machine-design-in-c/184401236"><strong>State Machine Design in C++</strong></a>
 
-<p><a href="https://www.cmake.org/">CMake</a>&nbsp;is used to create the build files. CMake is free and open-source software. Windows, Linux and other toolchains are supported. See the <strong>CMakeLists.txt </strong>file for more information.</p>
-
 ## Related repositories
 
 <ul>
-    <li><a href="https://github.com/endurodave/C_StateMachineWithThreads">C Language State Machine with Threads</a> - by David Lafreniere</li>
-	<li><a href="https://github.com/endurodave/C_Allocator">A Fixed Block Allocator in C</a> - by David Lafreniere</li>
-    <li><a href="https://github.com/endurodave/StateMachine">State Machine Design in C++</a> - by David Lafreniere</li>
+    <li><a href="https://github.com/endurodave/C_StateMachineWithThreads">C Language State Machine with Threads</a> - A C language state machine with OS threads.</li>
+	<li><a href="https://github.com/endurodave/C_Allocator">A Fixed Block Allocator in C</a> - A C language fixed block memory allocator.</li>
+    <li><a href="https://github.com/endurodave/StateMachine">State Machine Design in C++</a> - A C++ finite state machine (FSM) implementation.</li>
+    <li><a href="https://github.com/endurodave/StateMachineWithThreads">C++ State Machine with Threads</a> - A C++ state machine integrated with an asynchronous callback library.</li>
+	<li><a href="https://github.com/endurodave/StateMachineWithModernDelegates">C++ State Machine with Delegates</a> - A C++ state machine integrated with the <a href="https://github.com/endurodave/DelegateMQ">DelegateMQ</a> asynchronous delegate library.</li>
+    <li><a href="https://github.com/endurodave/AsyncStateMachine">Asynchronous State Machine in C++</a> - An asynchronous C++ state machine integrated with the <a href="https://github.com/endurodave/DelegateMQ">DelegateMQ</a> asynchronous delegate library.</li>
 </ul>
+
+# Getting Started
+
+[CMake](https://cmake.org/) is used to create the project build files on any Windows or Linux machine. The state machine source code works on any C language compiler on any platform.
+
+1. Clone the repository.
+2. From the repository root, run the following CMake command:   
+   `cmake -B Build .`
+3. Build and run the project within the `Build` directory. 
 
 # Introduction
 
