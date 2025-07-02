@@ -16,9 +16,7 @@ A compact C finite state machine (FSM) implementation that's easy to use on embe
 - [Getting Started](#getting-started)
 - [Introduction](#introduction)
   - [Background](#background)
-- [Project Build](#project-build)
-  - [Windows Visual Studio](#windows-visual-studio)
-  - [Linux Make](#linux-make)
+- [Getting Started](#getting-started-1)
 - [Why use a state machine?](#why-use-a-state-machine)
 - [State machine design](#state-machine-design)
   - [Internal and external events](#internal-and-external-events)
@@ -111,21 +109,14 @@ switch (currentState) {
 
 <p>The first problem revolves around controlling what state transitions are valid and which ones are invalid. There is no way to enforce the state transition rules. Any transition is allowed at any time, which is not particularly desirable. For most designs, only a few transition patterns are valid. Ideally, the software design should enforce these predefined state sequences and prevent the unwanted transitions. Another problem arises when trying to send data to a specific state. Since the entire state machine is located within a single function, sending additional data to any given state proves difficult. And lastly these designs are rarely suitable for use in a multithreaded system. The designer must ensure the state machine is called from a single thread of control.</p>
 
-# Project Build
+# Getting Started
 
-<a href="https://www.cmake.org">CMake</a> is used to create the build files. CMake is free and open-source software. Windows, Linux and other toolchains are supported. Example CMake console commands executed inside the project root directory: 
+[CMake](https://cmake.org/) is used to create the project build files on any Windows or Linux machine. The state machine source code works on any C compiler on any platform.
 
-## Windows Visual Studio
-
-<code>cmake -G "Visual Studio 17 2022" -A Win32 -B Build -S .</code>
-
-After executed, open the Visual Studio project from within the <code>Build</code> directory.
-
-## Linux Make
-
-<code>cmake -G "Unix Makefiles" -B Build -S .</code>
-
-After executed, build the software from within the Build directory using the command <code>make</code>. Run the console app using <code>./C_StateMachineApp</code>.
+1. Clone the repository.
+2. From the repository root, run the following CMake command:   
+   `cmake -B Build .`
+3. Build and run the project within the `Build` directory. 
 
 # Why use a state machine?
 
