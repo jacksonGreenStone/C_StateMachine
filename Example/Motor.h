@@ -1,8 +1,8 @@
 #ifndef _MOTOR_H
 #define _MOTOR_H
 
-#include "DataTypes.h"
-#include "StateMachine.h"
+#include "../data_common/DataTypes.h"
+#include "../StateMachine/StateMachine.h"
 
 // Motor object structure
 typedef struct

@@ -22,7 +22,7 @@
 #define _FB_ALLOCATOR_H
 
 #include <stdlib.h>
-#include "DataTypes.h"
+#include "../data_common/DataTypes.h"
 
 #ifdef __cplusplus
 extern "C" {

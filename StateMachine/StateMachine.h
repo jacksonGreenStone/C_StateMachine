@@ -15,8 +15,8 @@
 #ifndef _STATE_MACHINE_H
 #define _STATE_MACHINE_H
 
-#include "DataTypes.h"
-#include "Fault.h"
+#include "../data_common/DataTypes.h"
+#include "../StateMachine/Fault.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -25,7 +25,7 @@ extern "C" {
 // Define USE_SM_ALLOCATOR to use the fixed block allocator instead of heap
 #define USE_SM_ALLOCATOR
 #ifdef USE_SM_ALLOCATOR
-    #include "sm_allocator.h"
+    #include "../dynamic_memory/sm_allocator.h"
     #define SM_XAlloc(size)    SMALLOC_Alloc(size)
     #define SM_XFree(ptr)      SMALLOC_Free(ptr)
 #else

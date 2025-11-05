@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "fb_allocator.h": "c",
+        "*.gitignore": "c",
+        "statemachine.h": "c",
+        "motor.h": "c",
+        "datatypes.h": "c",
+        "fault.h": "c",
+        "sm_allocator.h": "c",
+        "centrifugetest.h": "c"
+    }
+}

@@ -1,7 +1,7 @@
-#include "fb_allocator.h"
-#include "StateMachine.h"
-#include "Motor.h"
-#include "CentrifugeTest.h"
+#include "./dynamic_memory/fb_allocator.h"
+#include "./StateMachine/StateMachine.h"
+#include "./Example/Motor.h"
+#include "./Example/CentrifugeTest.h"
 
 // @see https://github.com/endurodave/C_StateMachine
 // 

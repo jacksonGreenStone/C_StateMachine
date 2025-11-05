@@ -1,8 +1,8 @@
 #ifndef _CENTRIFUGE_TEST_H
 #define _CENTRIFUGE_TEST_H
 
-#include "DataTypes.h"
-#include "StateMachine.h"
+#include "../data_common/DataTypes.h"
+#include "../StateMachine/StateMachine.h"
 
 // Declare the private instance of CentrifugeTest state machine
 SM_DECLARE(CentrifugeTestSM)
